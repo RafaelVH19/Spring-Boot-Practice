@@ -1,0 +1,30 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "grupo": "A"
+    },
+    {
+      "id": 2,
+      "nombre": "Antonio",
+      "grupo": "A"
+    },
+    {
+      "id": 3,
+      "nombre": "Bruno",
+      "grupo": "B"
+    },
+    {
+      "id": 4,
+      "nombre": "Bertha",
+      "grupo": "B"
+    },
+    {
+      "id": 5,
+      "nombre": "Carlos",
+      "grupo": "C"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
