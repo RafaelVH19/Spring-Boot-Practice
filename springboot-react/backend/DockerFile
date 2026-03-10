@@ -1,0 +1,9 @@
+FROM eclipse-temurin:21-jre
+
+WORKDIR /app
+COPY target/*.jar app.jar
+
+# Carpeta externa para datos
+VOLUME ["/app/data"]
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
