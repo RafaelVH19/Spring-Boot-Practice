@@ -43,16 +43,16 @@ export default function StudentList({
   return (
     <section className="panel post-list">
       {students.map((student) => (
-        <article
+        <button
           key={student.id}
+          type="button"
+          onClick={() => onSelectStudent(student)}
           className={`post-card ${selectedStudentId === student.id ? 'selected' : ''}`}
         >
-          <button type="button" onClick={() => onSelectStudent(student)}>
-            <span className="post-card-id">Alumno #{student.id}</span>
-            <strong>{student.nombre}</strong>
-            <p>Grupo: {student.grupo}</p>
-          </button>
-        </article>
+          <span className="post-card-id">Alumno #{student.id}</span>
+          <strong>{student.nombre}</strong>
+          <p>Grupo: {student.grupo}</p>
+        </button>
       ))}
     </section>
   );

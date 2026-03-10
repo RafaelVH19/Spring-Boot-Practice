@@ -49,11 +49,8 @@ export default function App() {
 
       <SearchBar value={searchTerm} onChange={setSearchTerm} />
 
-      <section style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1rem', alignItems: 'start' }}>
-        <StudentForm submitLabel="Crear estudiante" loading={saving} onSubmit={handleCreate} />
-      </section>
-
       <section className="layout">
+        <StudentForm submitLabel="Crear estudiante" loading={saving} onSubmit={handleCreate} />
         <StudentList
           students={filteredStudents}
           selectedStudentId={selectedStudent?.id ?? null}

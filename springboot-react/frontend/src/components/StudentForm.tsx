@@ -44,9 +44,9 @@ export default function StudentForm({
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full">
-      <div className="w-full">
-        <div className="w-full bg-white rounded-lg p-8 flex flex-col mt-0 relative z-10 shadow-md">
+    <form onSubmit={handleSubmit} className="w-full h-full">
+      <div className="w-full h-full">
+        <div className="w-full h-full bg-white rounded-lg p-8 flex flex-col ...">
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">{submitLabel}</h2>
 
           <div className="relative mb-4">
