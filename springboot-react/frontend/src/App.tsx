@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react';
 import SearchBar from './components/SearchBar';
 import StudentForm from './components/StudentForm';
 import StudentList from './components/StudentList';
+import TitleCard from './components/TitleCard';
+import DataCard from './components/DataCard'
 import { useStudents } from './hooks/useStudents';
 import type { Student, StudentInput } from './lib/api';
 
@@ -33,28 +35,16 @@ export default function App() {
 
   return (
     <main className="app-shell">
-      <header className="hero">
-        <p className="eyebrow">Practica React + TypeScript</p>
-        <h1>Registro de estudiantes</h1>
-        <p>
-          Consume una API con <code>fetch</code>, carga datos con <code>useEffect</code> y
-          filtra estudiantes por nombre.
-        </p>
-      </header>
+      <TitleCard
+        head="Practica API con Spring Boot"
+        title="Registro de estudiantes"
+        body="Utiliza Spring Boot con Jackson y Maven para crear un Backend. Se compila en una imagen Docker con persistencia."
+      />
 
       <section className="stats-grid">
-        <article className="stat-card">
-          <span>Total de estudiantes</span>
-          <strong>{stats.totalStudents}</strong>
-        </article>
-        <article className="stat-card">
-          <span>Estudiantes filtrados</span>
-          <strong>{stats.filteredStudents}</strong>
-        </article>
-        <article className="stat-card">
-          <span>Estudiante seleccionado</span>
-          <strong>{stats.selectedStudentId}</strong>
-        </article>
+        <DataCard title="Total de estudiantes" number={stats.totalStudents} />
+        <DataCard title="Estudiantes filtrados" number={stats.filteredStudents} />
+        <DataCard title="Estudiante seleccionado" number={stats.selectedStudentId} />
       </section>
 
       <SearchBar value={searchTerm} onChange={setSearchTerm} />
