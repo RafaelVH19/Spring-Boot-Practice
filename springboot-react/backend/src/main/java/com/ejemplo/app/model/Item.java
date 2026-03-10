@@ -1,4 +1,4 @@
-package main.java.com.ejemplo.app.model;
+package com.ejemplo.app.model;
 
 public class Item {
     private Number id;
