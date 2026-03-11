@@ -1,6 +1,7 @@
 # Practica Spring Boot React
 
 [![Watch the video](https://raw.githubusercontent.com/RafaelVH19/Spring-Boot-Practice/main/springboot-react/A01741660_Thumbnail.png)](https://raw.githubusercontent.com/RafaelVH19/Spring-Boot-Practice/main/springboot-react/A01741660_Persistencia.mp4)
+(Presiona en la imagen para descargar el video!)
 
 ## Una imagen NO es un contenedor
 
